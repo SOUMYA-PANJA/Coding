@@ -1,0 +1,3 @@
+1. Modular Exponentiation Last Excersise
+2. nCr mod p using fermet's theorem not working
+3. Gaham Scan Algorithm

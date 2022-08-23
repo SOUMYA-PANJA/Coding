@@ -1,0 +1,11 @@
+{
+    "Name":"John Cena",
+    "Roll":12.3,
+    "Bool":false,
+    "lic":null,
+    "arr":["hello","guys","there"],
+    "myobj":{
+        "name":"Rocky",
+        "Roll":1
+    }
+}

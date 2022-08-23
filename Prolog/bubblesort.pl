@@ -1,0 +1,12 @@
+b_sort([],A,A).
+b_sort([H|T],A,S):-
+    bubble(H,T,NT,Max),
+    b_sort(NT,[Max|A],S).
+bubble(X,[],[],X).
+bubble(X,[Y|T],[Y|NT],Max):-
+    X>Y,
+    bubble(X,T,NT,Max).
+bubble(X,[Y|T],[X|NT],Max):-
+    X=<Y,
+    bubble(Y,T,NT,Max).
+

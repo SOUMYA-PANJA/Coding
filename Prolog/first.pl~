@@ -1,0 +1,2 @@
+likes(harry).
+foo(X):-X is 6,likes(hary),fail,X is 7.

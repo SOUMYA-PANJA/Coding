@@ -1,0 +1,14 @@
+*.vscode
+*.idea
+tempCodeRunnerFile*
+Notes/
+Practice/
+*.jpg
+*.pdf
+static/
+*.gif
+*.png
+*.dict
+*.mm
+*.index
+data/

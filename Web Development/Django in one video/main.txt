@@ -1,0 +1,29 @@
+Use command django-admin startproject <project name> to create a project.
+Use command python manage.py runserver to start the server.(While you are in the folder.)
+When a request comes, then it first goes to the urls.py of the project and then it is sent to the urls.py of the app.
+Use command python manage.py startapp <app name> to create an app.
+At first the app doesn't contain any urls.py, we have to create it. And copy the starter code of urls.py of project.
+urls.py is used to navigate through the project. At first the url come to the project urls, and then it send contorl to specified locations like different apps.
+views.py is used to render HttpsResponse and templates.
+Create two folders static and templates where app and project are present.
+Static folder contains all the files which can be seen by everyone.
+Templates folder contains all the html, css and js files in it.
+Use command python manage.py createsuperuser.
+Template inheritance:
+    Use this to write less html.
+    {% block block_name %}{% endblock block_name %}
+    {% extends 'base_html_page' %}
+
+We can keep the images in the static folder.
+There is a option on bottom left to change the file type.(liske html to django-html)
+Add {% csrf_token %} to submit a form. To ensure security.
+The action field in the form will check for the urls in the urls.py.
+
+Create models in the models.py.
+Then register the model in admin.py.
+Import/Register the app configuration in project using app.py to settings.py.
+Use command python manage.py makemigrations to create models.
+Use command python manage.py migrate to create the table written in the model. This will create a py file in the migrations folder.
+Now write your code in views to store data.
+Use command python manage.py shell to use python django shell just like python shell. And can use django in the shell.
+2:35:00
