@@ -13,3 +13,4 @@ static/
 *.mm
 *.index
 data/
+coordinate/
