@@ -19,7 +19,7 @@ void getSecondLargest(int arr[], int size){
             
         }
     }
-    cout<<"The largest element in the array is "<<res;
+    cout<<"The second largest element in the array is "<<res;
 }
 
 void array(int arr[], int size){
