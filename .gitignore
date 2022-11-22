@@ -16,3 +16,11 @@ data/
 coordinate/
 gaussian/
 *.exe
+settings.py
+out/
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
