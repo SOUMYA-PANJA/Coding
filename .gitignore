@@ -19,6 +19,7 @@ videos/
 *.mm
 *.index
 *.exe
+*.class
 settings.py
 *.log
 *.pot
