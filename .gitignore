@@ -1,6 +1,3 @@
-*.vscode
-*.idea
-tempCodeRunnerFile*
 Notes/
 Practice/
 static/
@@ -10,6 +7,9 @@ gaussian/
 out/
 frames/
 videos/
+tempCodeRunnerFile*
+*.vscode
+*.idea
 *.jpg
 *.jpeg
 *.pdf
@@ -20,10 +20,9 @@ videos/
 *.index
 *.exe
 *.class
-settings.py
 *.log
 *.pot
 *.pyc
 __pycache__
 db.sqlite3
-media
+settings.py
