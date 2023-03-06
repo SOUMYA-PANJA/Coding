@@ -1,7 +1,4 @@
 class Arith{
-    static void show(byte num){
-        System.out.println("Byte: " + num);
-    }
     static void show(short num){
         System.out.println("Short: " + num);
     }
@@ -13,10 +10,10 @@ class Arith{
     }
 }
 
-public class Program2 {
+public class Program3MethodOverloadingAutomaticPromotion2 {
     public static void main(String[] args) {
         byte num = 2;
-        Arith.show(num);
+        Arith.show(num); // promoted to short
         Arith.show(2); // take by default int
     }
 }

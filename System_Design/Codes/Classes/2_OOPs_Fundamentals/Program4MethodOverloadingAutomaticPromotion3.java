@@ -1,6 +1,6 @@
 class Arith{
-    static void show(short num){
-        System.out.println("Short: " + num);
+    static void show(char num){
+        System.out.println("Char: " + num);
     }
     static void show(int num){
         System.out.println("Int: " + num);
@@ -10,10 +10,11 @@ class Arith{
     }
 }
 
-public class Program3 {
+public class Program4MethodOverloadingAutomaticPromotion3 {
     public static void main(String[] args) {
         byte num = 2;
-        Arith.show(num); // promoted to short
+        Arith.show(num); // ignored char
         Arith.show(2); // take by default int
+        Arith.show('A');
     }
 }

@@ -13,7 +13,7 @@ import java.util.Scanner;
  * n = 8
 */
 
-public class Program5 {
+public class Program5PrintACurveEdgesHalfLength {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");

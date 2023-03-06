@@ -7,7 +7,7 @@ class Arith{
     }
 }
 
-public class Program5 {
+public class Program5MethodOverloadingAutomaticPromotion4 {
     public static void main(String[] args) {
         Arith.show(2); // take by default int
         Arith.show('A'); // by default char
@@ -16,7 +16,7 @@ public class Program5 {
          * Automatic promotion in overloading
          * byte -> short -> int -> long -> float -> double
          * 
-         * char -> int -> long -> float -> double
+         *          char -> int -> long -> float -> double
          */
     }
 }

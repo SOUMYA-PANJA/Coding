@@ -7,7 +7,7 @@ class Arith{
     }
 }
 
-public class Program1 {
+public class Program1MethodOverloading {
     public static void main(String[] args) {
         System.out.println(Arith.add(1, 2));
         System.out.println(Arith.add(1, 2, 3));
