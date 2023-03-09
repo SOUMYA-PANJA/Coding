@@ -2,6 +2,7 @@
 // If all the members in a class are abstract then the class achieved full abstraction
 // There can't abstract variable and constructor(it have first line as super(), which have a body.).
 // We can create references of abstract class, so that is can provide upcasting and dynamic polymorphism.. But we can instantiate an abstract class.
+// Abstract class can have constructors
 abstract class Plane{
     abstract public void fly();
     abstract public void takeOff();
