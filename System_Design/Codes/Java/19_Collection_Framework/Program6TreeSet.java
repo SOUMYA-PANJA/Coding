@@ -35,7 +35,7 @@ public class Program6TreeSet {
         
         System.out.println("Value greater than 20: " + ts1.higher(20));
         System.out.println("Value lower than 20: " + ts1.lower(20));
-        System.out.println("Value greater than 18: " + ts1.higher(20));
+        System.out.println("Value greater than 18: " + ts1.higher(18));
         System.out.println("Value lower than 18: " + ts1.lower(18));
         System.out.println();
 

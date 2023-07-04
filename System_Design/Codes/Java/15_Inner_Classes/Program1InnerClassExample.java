@@ -40,7 +40,7 @@ public class Program1InnerClassExample {
         Person.Address obj3 = new Person.Address(); // static class
         obj3.staticClass();
 
-        // Can' perform upcasting
+        // Can't perform upcasting
         // Person obj4;
         // obj4 = obj1.new Employee();
         // obj4 = new Person.Address();

@@ -1,6 +1,6 @@
 /* 
  * Legacy classes are old collection classes.
- * Leagecy classes are syncronized by collection framework is not syncronized. Therefore multithreading is not achieved.
+ * Leagecy classes are syncronized but collection framework is not syncronized. Therefore multithreading is not achieved.
  * Enumeration can be used only in Legacy classes but iterator can be used in Legacy classes as well as collection framework.
  * Iterator can update the collection but enumeration have only read only operation.
  * Leagcy classes are not used in industry that much.

@@ -3,6 +3,7 @@
 using namespace std;
 
 // Prints Leaders in reverse order
+// All the elements on the right of the element are smaller.
 
 void leaders(int arr[], int size){
     int curr_lead = arr[size - 1];

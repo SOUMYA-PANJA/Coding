@@ -27,7 +27,7 @@ interface C{
     void abc();
 }
 
-class B implements A{
+class B implements A, C{
     public void show(){ // Need to write public. Can't reduce the visibility of the method. And we have to implement the method or else it will show an error.
         System.out.println("Hello World...");
     }

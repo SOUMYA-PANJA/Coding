@@ -8,6 +8,8 @@ public class Program1TryCatchFinally{
         } 
         catch (ArithmeticException e) {
             System.out.println("Division by 0...");
+            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         catch (Exception e) {
             System.out.println("Unknown exception...");

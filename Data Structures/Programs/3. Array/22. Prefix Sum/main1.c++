@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+/* 
 bool isEqui(int arr[], int size)
 {
     int sum = 0;
@@ -20,7 +20,26 @@ bool isEqui(int arr[], int size)
     }
     return false;
 }
+ */
 
+bool isEqui(int arr[], int size){
+    int rSum = 0;
+    for (int i = 0; i < size; i++)
+    {
+        rSum += arr[i];
+    }
+    int lSum = 0;
+    for (int i = 0; i < size; i++)
+    {
+        rSum -= arr[i];
+        if (rSum == lSum)
+        {
+            return true;
+        }
+        lSum += arr[i]
+    }
+    return false;
+}
 void array(int arr[], int size)
 {
     cout << "Enter elements in the array: \n";

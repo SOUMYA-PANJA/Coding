@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// Maximum value of arr[j] - arr[i] such that j > i
+
 int min(int a, int b){
     return a < b?a:b;
 }

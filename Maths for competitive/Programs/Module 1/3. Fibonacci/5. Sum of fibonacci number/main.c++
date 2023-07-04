@@ -7,7 +7,7 @@ int main(){
     int a;
     cout<<"Enter a number: ";
     cin>>a;
-    cout<<"Sum upto n "<<a<<"th fibonacci number is "<<fib(a+2) - 1;
+    cout<<"Sum upto "<<a<<"th fibonacci number is "<<fib(a+2) - 1;
     
     return 0;
 }

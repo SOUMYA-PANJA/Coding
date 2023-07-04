@@ -7,7 +7,7 @@ int main(){
     int a;
     cout<<"Enter a length of binary string: ";
     cin>>a;
-    cout<<"Total number of bainary string with length "<<a<<" is "<<fib(a+2);
+    cout<<"Total number of binary string with length "<<a<<" is "<<fib(a+2);
     
     return 0;
 }
