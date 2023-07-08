@@ -31,7 +31,7 @@ bool isSubSum(int arr[], int size, int sum)
 
 bool isSubSum(int arr[], int size, int sum){
     int curr_sum = 0, start = 0;
-    for (int end = 0; end <= size; end++)
+    for (int end = 0; end < size; end++)
     {
         curr_sum += arr[end];
         while (curr_sum > sum)
@@ -40,7 +40,7 @@ bool isSubSum(int arr[], int size, int sum){
         }
         if (curr_sum == sum)
         {
-            retunr true;
+            return true;
         }
     }
     return false;

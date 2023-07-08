@@ -6,7 +6,7 @@ import tkinter as tk
 import mysql.connector as sq
 import datetime
 from tkinter import messagebox
-mycon=sq.connect(host="localhost",user="root",passwd="soumya")
+mycon=sq.connect(host="localhost",user="root",passwd="passwd")
 cur=mycon.cursor()
 
 #creating database
