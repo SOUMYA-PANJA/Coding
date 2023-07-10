@@ -2,23 +2,23 @@
 
 using namespace std;
 
-int binarySearch(int arr[], int size, int key){
-    int low = 0;
-    int high = size - 1;
-    int mid;
-    while(low <= high){
-        mid = low + (high - low) / 2;
-        if(arr[mid] == key){
-            return mid;
+void bubbleSort(int arr[], int size) {
+    bool swapped = false;
+    for (int i = 0; i < size - 1; i++)
+    {
+        swapped = false;
+        for (int j = 0; j < size - 1 - i; j++)
+        {
+            if(arr[j] > arr[j + 1]){
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
         }
-        else if(arr[mid] < key){
-            low = mid + 1;
-        }
-        else{
-            high = mid - 1;
+        if (!swapped)
+        {
+            return;
         }
     }
-    return -1;
 }
 
 void array(int arr[], int size)
@@ -49,19 +49,16 @@ int main()
 
     int arr[size];
     array(arr, size);
+
+    cout<<"Before sorting:\n";
+    printArray(arr, size);
+
+    bubbleSort(arr, size);
+    
+    cout<<"After sorting:\n";
     printArray(arr, size);
     
-    int key;
-    cout << "Enter key to be searched: ";
-    cin >> key;
-    
-    int pos = binarySearch(arr, size, key);
-    if(pos >= 0){
-        cout<<key<<" is found at index: "<<pos;
-    }
-    else{
-        cout<<key<<" not found.";
-    }
+
 
     return 0;
 }

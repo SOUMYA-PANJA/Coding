@@ -2,23 +2,20 @@
 
 using namespace std;
 
-int binarySearch(int arr[], int size, int key){
-    int low = 0;
-    int high = size - 1;
-    int mid;
-    while(low <= high){
-        mid = low + (high - low) / 2;
-        if(arr[mid] == key){
-            return mid;
-        }
-        else if(arr[mid] < key){
-            low = mid + 1;
-        }
-        else{
-            high = mid - 1;
-        }
+int findRepeating(int arr[], int size){
+    int slow = arr[0] + 1, fast = arr[0] + 1;
+    do{
+        slow = arr[slow] + 1;
+        fast = arr[arr[fast] + 1] + 1;
+    }while(slow != fast);
+    
+    slow = arr[0] + 1;
+    while (slow != fast)
+    {
+        fast = arr[fast] + 1;
+        slow = arr[slow] + 1;
     }
-    return -1;
+    return slow - 1;
 }
 
 void array(int arr[], int size)
@@ -51,17 +48,7 @@ int main()
     array(arr, size);
     printArray(arr, size);
     
-    int key;
-    cout << "Enter key to be searched: ";
-    cin >> key;
-    
-    int pos = binarySearch(arr, size, key);
-    if(pos >= 0){
-        cout<<key<<" is found at index: "<<pos;
-    }
-    else{
-        cout<<key<<" not found.";
-    }
+    cout<< "The repeating element is: "<<findRepeating(arr, size);
 
     return 0;
 }

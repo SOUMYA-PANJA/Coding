@@ -2,23 +2,19 @@
 
 using namespace std;
 
-int binarySearch(int arr[], int size, int key){
-    int low = 0;
-    int high = size - 1;
-    int mid;
-    while(low <= high){
-        mid = low + (high - low) / 2;
-        if(arr[mid] == key){
-            return mid;
+void insertionSort(int arr[], int size) {
+    int j, value;
+    for (int i = 1; i < size; i++)
+    {
+        value = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > value)
+        {
+            arr[j + 1] = arr[j];
+            j--;
         }
-        else if(arr[mid] < key){
-            low = mid + 1;
-        }
-        else{
-            high = mid - 1;
-        }
+        arr[j + 1] = value;
     }
-    return -1;
 }
 
 void array(int arr[], int size)
@@ -49,19 +45,16 @@ int main()
 
     int arr[size];
     array(arr, size);
+
+    cout<<"Before sorting:\n";
+    printArray(arr, size);
+
+    insertionSort(arr, size);
+    
+    cout<<"After sorting:\n";
     printArray(arr, size);
     
-    int key;
-    cout << "Enter key to be searched: ";
-    cin >> key;
-    
-    int pos = binarySearch(arr, size, key);
-    if(pos >= 0){
-        cout<<key<<" is found at index: "<<pos;
-    }
-    else{
-        cout<<key<<" not found.";
-    }
+
 
     return 0;
 }

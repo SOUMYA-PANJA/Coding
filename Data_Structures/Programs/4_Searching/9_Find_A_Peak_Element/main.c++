@@ -43,7 +43,7 @@ void printArray(int arr[], int size)
 
 int main()
 {
-    int size, k;
+    int size;
     cout << "Enter size of array: ";
     cin >> size;
 
