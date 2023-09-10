@@ -2,4 +2,8 @@
 17_API_18th_Feb_2023 Assignment
 20_Web_Scraping_21_Feb_2023 Assignment
 21_Image_Scrapper_22_Feb_2023 Assignment
+Web_Scraping_Image_Scraping_Deployment
 23_Pandas_Advance_24_Feb_2023 Assignment
+Statistics
+Regression_Deployment_31st_Mar_2023
+Logistic_Regression_Deployment_1st_to_3rd_Mar_2023
