@@ -1,0 +1,30 @@
+.linearGradient{
+    height: 300px;
+    width: 500px;
+    /* background-image: linear-gradient(red, yellow, blue); */
+    /* background-image: linear-gradient(to right, red, yellow, blue); */
+    background-image: linear-gradient(to top, red, yellow, blue);
+}
+
+.radialGradient{
+    height: 300px;
+    width: 700px;
+    /* background-image: radial-gradient(red, yellow, blue); */
+    /* background-image: radial-gradient(circle, red, yellow, blue); */
+    background-image: radial-gradient(farthest-corner, red, yellow, blue);
+}
+
+.repeatingRadialGradient{
+    height: 300px;
+    width: 700px;
+    background-image: repeating-radial-gradient(red 10%, yellow 20%, blue 15%);
+    /* Just like repeating-radial-gradient we have linear-radial-gradient. */
+    /* background-image: repeating-linear-gradient((red 10%, yellow 20%, blue 15%)); */
+}
+
+.conicGradient{
+    height: 300px;
+    width: 700px;
+    /* background-image: conic-gradient(red, yellow, blue); */
+    background-image: conic-gradient(red 180deg, yellow, blue);
+}

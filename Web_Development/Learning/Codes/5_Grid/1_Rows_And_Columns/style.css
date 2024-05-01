@@ -1,0 +1,70 @@
+.container {
+    border: 2px solid yellow;
+    display: grid;
+
+    /* 3 columns are created. */
+    /* grid-template-columns: auto auto auto; */
+    
+    /* We can also set values. These values represents the width of the column. */
+    /* grid-template-columns: 500px 500px 500px; */
+
+    /* Divides the space into fractions of display. */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* Same as above. */
+    /* grid-template-columns: repeat(1, fr); */
+    
+    /* Minimum 10px and maximum 1fr */
+    /* grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr); */
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    /* Defines the heigth of each row in row. */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: 200px 100px 100px;
+}
+
+.box {
+    /* If we specify the height and width then elements in each row and column will not change by properties. */
+    height: 100px;
+    width: 100px;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.box1 {
+    background-color: red;
+
+    /* Works on the y-axis. */
+    align-self: center;
+
+    /* Works on the x-axis. */
+    justify-self: center;
+}
+
+.box2 {
+    background-color: green;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: aquamarine;
+}
+
+.box5 {
+    background-color: brown;
+}
+
+.box6 {
+    background-color: goldenrod;
+}
+
+.box7 {
+    background-color: grey;
+}

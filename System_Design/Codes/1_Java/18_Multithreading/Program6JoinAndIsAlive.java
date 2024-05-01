@@ -24,7 +24,8 @@ public class Program6JoinAndIsAlive {
         t1.start();
         System.out.println("Is the thread alive after starting and before joining: " + t1.isAlive());
         try {
-            t1.join(); // If you omit this line then first main thread will complete executing then t1 starts executing.
+            t1.join();
+            // If you omit this line then first main thread will complete executing then t1 starts executing.
         }
         catch (InterruptedException e) {
             e.printStackTrace();

@@ -1,0 +1,27 @@
+/* Effects the first line of the selected element. */
+.class1::first-line{
+    background-color: yellow;
+}
+
+/* Effects the first letter of the selected element. */
+.class2::first-letter{
+    background-color: yellow;
+}
+
+/* Apply after the element selected */
+.class3::after{
+    content: "- Soumya";
+    color: yellow;
+}
+
+/* Apply before the element selected */
+.class4::before{
+    content: "Before: ";
+    color: blue;
+}
+
+/* CSS when you selects an element or a part of it. */
+.class5::selection{
+    background-color: gold;
+    color: blue;
+}

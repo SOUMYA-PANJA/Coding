@@ -22,7 +22,7 @@ void findGroups(int arr[], int size)
     }
 }
 
-void array(int arr[], int size)
+void arrayInput(int arr[], int size)
 {
     cout << "Enter elements in the array: \n";
     for (int i = 0; i < size; i++)
@@ -49,7 +49,7 @@ int main()
     cin >> size;
 
     int arr[size];
-    array(arr, size);
+    arrayInput(arr, size);
     printArray(arr, size);
     cout << "Minimum consecutive filps required to make all the elements same in the array: \n";
     findGroups(arr, size);

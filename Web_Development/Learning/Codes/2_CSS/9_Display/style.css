@@ -1,0 +1,23 @@
+p {
+    /* p is a block level element, but here we are changing it to inline. */
+    display: inline;
+}
+
+span {
+    /* span is a inline element, but here are changing it to block level. */
+    display: block;
+}
+
+p.in-block {
+    /* inline-block is used to make an element as a inline element as inside it as a block. */
+    display: inline-block;
+    width: 100px;
+}
+
+p.class1{
+    display: none;
+}
+
+p.class2{
+    display: hidden;
+}

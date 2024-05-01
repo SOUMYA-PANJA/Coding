@@ -4,6 +4,9 @@
 // We can create references of abstract class, so that is can provide upcasting and dynamic polymorphism.. But we can instantiate an abstract class.
 // Abstract class can have constructors
 abstract class Plane{
+    Plane() {
+        System.out.println("Plane....");
+    }
     abstract public void fly();
     abstract public void takeOff();
     public void landing(){
@@ -12,6 +15,9 @@ abstract class Plane{
 }
 
 class AeroPlane extends Plane{
+    AeroPlane() {
+        System.out.println("Aeroplane");
+    }
     public void fly() {
         System.out.println("Aeroplane is flying at medium height.");
     }
@@ -22,6 +28,9 @@ class AeroPlane extends Plane{
 }
 
 class CargoPlane extends Plane{
+    CargoPlane() {
+        System.out.println("Cargoplane");
+    }
     public void fly() {
         System.out.println("Cargoplane is flying at larger height");
     }

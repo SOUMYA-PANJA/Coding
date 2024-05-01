@@ -1,0 +1,78 @@
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+
+h1 {
+    color: blue;
+}
+
+/* Class Selector */
+
+.class1 {
+    background: red;
+    color: aqua;
+}
+
+.class2 {
+    font-size: 20px;
+}
+
+/* Id selector */
+
+#id1 {
+    color: burlywood;
+}
+
+/* Selector List */
+
+.class3,
+.class4 {
+    background-color: yellow;
+    color: brown;
+}
+
+/* Decendent Selector : Selects only p tags which is a child or decendent (can be child of child of...) of main tag. */
+
+main p {
+    color: gold;
+}
+
+/* Child Selector : Selects the p tags which are immediate child of h2 tag */
+
+h2>p {
+    color: aqua;
+    background-color: red;
+}
+
+/* Adjacent Sibiling Selector : Selects the immediate neighbour "p tag" of the "section tag"(after only) */
+
+section+p {
+    font-size: 30px;
+}
+
+/* General Sibiling Selector : Selects all p tags that comes after the article tag */
+
+article~p {
+    color: blue;
+}
+
+/* Attribute Selector : Selects element based on attribute and value pair */
+
+[target="_blank"]{
+    font-size: 50px;
+}
+[alt="Hello3"]{
+    color:red;
+    background-color: yellow;
+}
+
+/* See this link https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors for info */
+[alt~="Hello1"]{
+    color: yellow;
+    background-color: blue;
+}

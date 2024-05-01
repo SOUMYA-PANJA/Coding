@@ -1,0 +1,52 @@
+h3 {
+    color: red;
+}
+
+.class1 {
+    /* Align text at the center. */
+    /* text-align: center; */
+
+    /* Align text on the left side. (Default) */
+    /* text-align: left; */
+
+    /* Align text on the right side. (Default) */
+    /* text-align: right; */
+
+    /* Same as left for left to right writing. */
+    /* text-align: start; */
+
+    /* Same as right for right to left writing. */
+    /* text-align: end; */
+
+    /* Justify the text */
+    text-align: justify;
+
+    /* text alignment for the last line. (Default auto) */
+    /* text-align-last: auto; */
+
+    text-align-last: right;
+
+    line-height: 50px;
+    
+    word-spacing: 30px;
+}
+
+.class2 {
+
+    /* Direction in which the text will start. (Default ltr)*/
+    direction: rtl;
+
+    text-decoration: underline;
+}
+
+.class3 {
+
+    /* Indentation of the line. */
+    text-indent: 200px;
+
+    letter-spacing: 10px;
+}
+
+a {
+    text-transform: uppercase;
+}

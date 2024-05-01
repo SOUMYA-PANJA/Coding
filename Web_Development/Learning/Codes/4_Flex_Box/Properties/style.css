@@ -1,0 +1,100 @@
+.container {
+    border: 2px solid yellow;
+    height: 200px;
+
+    /* Takes the complete block. */
+    display: flex;
+
+    /* Takes the box of the required size. */
+    /* display: inline-flex; */
+
+    /* By defalut row. Also have row-reverse, column-reverse*/
+    /* flex-direction: column; */
+
+    /* Keeps all the elements if the screen is small also by sending then in a new line. */
+    /* flex-wrap: wrap; */
+
+    /* Keeps all the element is a single line. Default value. */
+    /* flex-wrap: nowrap; */
+
+    /* The wrap-direction gets reversed. */
+    /* flex-wrap: wrap-reverse; */
+    
+    /* justify-content works on the main axis. */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+    /* justify-content: space-evenly; */
+
+    /* align-items works on the main axis. Dont't work properly if items have its own height and width. */
+    align-items: center;
+
+    /* Specify the alignment of flex lines in the flox box. */
+    /* align-content: center; */
+
+    /* Short hand for row and column gap */
+    /* gap: 10px; */
+
+    /* Gap between elements row wise. */
+    /* row-gap:20px ; */
+
+    /* Gap between elements column wise. */
+    /* column-gap: 30px; */
+
+    /* flex-flow: shorthand for flex-direction flow-wrap */
+    /* flex-flow: column wrap; */
+}
+
+.box {
+    /* Remove for align-items. */
+    height: 100px;
+    width: 100px;
+    font-size: x-large;
+}
+
+.box1 {
+    background-color: red;
+
+    /* The growing factor of flex elements. */
+    flex-grow: 2;
+
+    /* flex: shorthand for flex-grow, flex-shrink and flex-basis. */
+    /* flex: 2 3 4; */
+}
+
+.box2 {
+    background-color: green;
+
+    order: 2;
+}
+
+.box3 {
+    background-color: blue;
+    flex-grow: 4;
+}
+
+.box4 {
+    background-color: aquamarine;
+
+    /* By default order is zero. The lower the order the priority it will get. (lower oreder elements comes first) */
+    order: 1;
+}
+
+.box5 {
+    background-color: brown;
+    
+    /* Shrinking factor of flex element. */
+    flex-shrink: 4;
+}
+
+.box6 {
+    background-color: goldenrod;
+
+    /* Alignment of individual flex items on the cross axis. */
+    align-self: flex-end;
+
+    /* Initial width of the individual flex item. */
+    flex-basis: 300px;
+}
+
+.box7 {
+    background-color: grey;
+}

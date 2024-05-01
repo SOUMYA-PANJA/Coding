@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>User Details...</legend>
+            <label for="name">Enter your name: </label>
+            <input type="text" id = "name" name = "username" placeholder = "Username..." />
+            <br/>
+            <label for="address">Enter your address: </label>
+            <textarea name="useraddress" id="address" cols="30" rows="10" placeholder = "Enter your text here..."></textarea>
+            <br/>
+            <label for="dob">DOB</label>
+            <input type="date" id = "dob" name = "userdob" />
+            <br/>
+            <label for="password">Enter your password: </label>
+            <input type="password" id = "password" name = "userpassword" />
+            <br/>
+            Select Gender:
+            <br/>
+            <label for="male">Male</label>
+            <input type="radio" id = "male" name = "gender" />
+            <br/>
+            <label for="female">Female</label>
+            <input type="radio" id = "female" name = "gender" />
+            <br/>
+            Select Favourite Movie:
+            <br/>
+            <label for="avengers">Avengers</label>
+            <input type="checkbox" name="movies" id="avengers" />
+            <br/>
+            <label for="ironman">Iron Man</label>
+            <input type="checkbox" name="movies" id="ironman" />
+            <br/>
+            <label for="drStrange">Dr. Strange</label>
+            <input type="checkbox" name="movies" id="drStrange" />
+            <br/>
+            <input type="submit" value = "Submit Karna Bhulna Mat" />
+        </fieldset>
+    </form>
+
+</body>
+</html>

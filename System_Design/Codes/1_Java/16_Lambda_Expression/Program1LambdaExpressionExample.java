@@ -40,6 +40,11 @@ public class Program1LambdaExpressionExample {
 
         // We can also use different names for the variables.
         Plane obj3 = (speed, alert) -> System.out.println("Flying>>>" + speed + " and " + alert);
+        /* 
+        Plane obj3 = (speed, alert) -> {
+            System.out.println("Flying>>>" + speed + " and " + alert);
+        };
+        */
         obj3.fly(300, "Safe");
     }
 }

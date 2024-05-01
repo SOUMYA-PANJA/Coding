@@ -16,6 +16,9 @@ class Todo(db.Model):
     def __repr__(self) -> str:
         return f"{self.sno} - {self.title} - {self.date}"
 
+with app.app_context():
+    db.create_all()
+
 @app.route("/", methods = ['GET','POST'])
 def hello_world():
     if(request.method == 'POST'):

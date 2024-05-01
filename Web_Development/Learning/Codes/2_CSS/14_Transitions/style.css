@@ -1,0 +1,18 @@
+.class1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    transition: width 2s, height 2s, background-color 3s;
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease-in; */
+    transition-timing-function: ease-out;
+
+    /* Delay between hover and transition starts. */
+    transition-delay: 2s;
+}
+
+.class1:hover{
+    width: 500px;
+    height: 400px;
+    background-color: yellow;
+}

@@ -1,0 +1,68 @@
+body {
+    border: 10px dotted blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main {
+    border: 10px solid red;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: yellow;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 50%;
+
+    /* Default value of position. Retains the normal flow of the elements. */
+    /* position: static; */
+
+    /* Must specify top, bottom, left, right attributes. */
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}
+
+.box3 {
+    background-color: blue;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 50%;
+
+    /* Sticks to the screen with respect to its parent slement. */
+    position: sticky;
+    top: 0px;
+}
+
+.box4 {
+    background-color: green;
+    font-size: x-large;
+    text-align: center;
+    
+    /* Change its position according to its original position. */
+    position: relative;
+    top: 100px;
+}
+
+.box5 {
+    background-color: gold;
+    font-size: x-large;
+    text-align: center;
+    
+    /* Change its position according to closest ansestor. */
+    position: absolute;
+    top: 10px;
+    left: 400px;
+}

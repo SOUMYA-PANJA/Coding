@@ -16,7 +16,7 @@ int maxSum(int arr[], int size)
     return res;
 }
 
-void array(int arr[], int size)
+void arrayInp(int arr[], int size)
 {
     cout << "Enter elements in the array: \n";
     for (int i = 0; i < size; i++)
@@ -43,7 +43,7 @@ int main()
     cin >> size;
 
     int arr[size];
-    array(arr, size);
+    arrayInp(arr, size);
     printArray(arr, size);
     cout << "Maximum Profit is: " << maxSum(arr, size);
 

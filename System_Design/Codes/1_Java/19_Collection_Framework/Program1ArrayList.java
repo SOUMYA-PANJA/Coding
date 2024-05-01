@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * ArrayList implements List interface and also called dynamic array datastructure.
  * It preserves the order of insertion.
  * It is not preferred to store the objects at a given index(not efficient).
- * Elements the ArrrayList can by randomly accessed.
+ * Elements the ArrrayList can be randomly accessed.
  * Duplicate values are allowed.
  */
 

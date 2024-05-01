@@ -1,0 +1,48 @@
+*{
+    /* Remove the defalut margin and padding. */
+    margin = 0px;
+    padding = 0px;
+}
+
+body{
+    border: 2px solid red;
+}
+
+.padding{
+    border: 2px solid red;
+
+    /* 
+        padding: each-side;
+        padding: top/bottom left/right;
+        padding: top left/right bottom;
+        padding: top right bottom left;
+    */
+        
+    padding: 100px 20px 50px;
+
+    /* There is also: padding-top, padding-bottom, padding-left and padding-right */
+
+    /* padding-top: 100px; */
+    /* padding-left: 20px; */
+    /* padding-bottom: 50px; */
+    /* padding-right: 20px; */
+
+}
+
+.margin{
+    border: 2px solid red;
+
+    /* Width of the element selected. */
+    width: 300px;
+
+    /* Margin have similar properties like padding. */
+    /* auto distributes the space evenly on the axes specified. */
+    margin: 50px auto;
+}
+
+/* Inherit the margin poperty of the parent element. */
+.margin2{
+    border: 2px solid red;
+    padding: inherit;
+    margin: inherit;
+}

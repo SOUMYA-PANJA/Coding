@@ -1,0 +1,32 @@
+.width1 {
+    border: 2px solid red;
+    width: 200px;
+}
+
+.width2 {
+    border: 2px solid red;
+    display: inline-block;
+    min-width: 500px;
+}
+
+.width3 {
+    border: 2px solid red;
+    display: inline-block;
+    max-width: 1000px;
+}
+
+.height1 {
+    border: 2px solid red;
+    height: 100px;
+}
+
+.height2 {
+    border: 2px solid red;
+    min-height: 200px;
+}
+
+.height3 {
+    border: 2px solid red;
+    max-height: 50px;
+    overflow: scroll;
+}

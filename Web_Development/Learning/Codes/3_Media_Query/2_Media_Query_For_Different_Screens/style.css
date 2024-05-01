@@ -1,0 +1,56 @@
+div {
+    text-align: center;
+    font-size: x-large;
+}
+
+/* For extra small devices like phones (600 px and down). */
+@media (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    div::after {
+        content: "This is mobile compatible.";
+    }
+}
+
+/* For small devices like portrait tablets and large phones (600 px and up). */
+@media (min-width: 600px) {
+    body {
+        background-color: aquamarine;
+    }
+    div::after {
+        content: "This is portrait tablet and large phone compatible.";
+    }
+}
+
+/* For medium devices like landscape tablets (768 px and up). */
+@media (min-width: 768px) {
+    body {
+        background-color: blue;
+        color: gold;
+    }
+    div::after {
+        content: "This is landscape tablet compatible.";
+    }
+}
+
+/* For large devices like laptops/desktops (992 px and up). */
+@media (min-width: 992px) {
+    body {
+        background-color: yellowgreen;
+        color:black;
+    }
+    div::after {
+        content: "This is laptops/desktops compatible.";
+    }
+}
+/* For extra large devices like large laptops and desktps (1200 px and up). */
+@media (min-width: 1200px) {
+    body {
+        background-color: brown;
+        color: white;
+    }
+    div::after {
+        content: "This is large screen compatible.";
+    }
+}

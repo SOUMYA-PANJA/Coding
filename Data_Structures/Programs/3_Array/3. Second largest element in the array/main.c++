@@ -12,7 +12,7 @@ void getSecondLargest(int arr[], int size){
         }
         else if (arr[i] != largest)
         {
-            if (res == -1 || arr[i] > res)
+            if (res == INT_MIN || arr[i] > res)
             {
                 res = arr[i];
             }

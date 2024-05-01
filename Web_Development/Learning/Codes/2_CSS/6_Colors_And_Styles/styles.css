@@ -1,0 +1,38 @@
+body {
+    color: #ffff00;
+    background-color: #000000;
+
+    /* Image for background */
+    background-image: url(https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?auto=compress&cs=tinysrgb&w=300);
+
+    /* This is the default property of background-repeat, to repeat image in all direction. */
+    /* background-repeat: repeat; */
+
+    /* Place the image only once and don't repeat it furthur. */
+    background-repeat: no-repeat;
+
+    /* Repeat background image in the x direction. */
+    /* background-repeat: repeat-x; */
+    
+    /* Repeat background image in the y direction. */
+    /* background-repeat: repeat-y; */
+
+    /* This is the default behaviour of the background-attachment. Therefore the backgound will remain fixed with respect to the whole content. 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
+    https://css-tricks.com/almanac/properties/b/background-attachment/
+    Check the links for more information.
+    */
+    background-attachment: scroll;
+    
+    /* The background image will be fixed to its position with respect to the viewport. */
+    /* background-attachment: fixed; */
+
+    /* The background is fixed with element and scrolls if the element have a scrolling mechanism. */
+    /* background-attachment: local; */
+
+    /* Scale the image to the whole background by keeping the aspect ratio. */
+    /* background-size: cover; */
+
+    /* Scale the image by keeping the aspect ratio to the largest size possible to background. */
+    background-size: contain;
+}

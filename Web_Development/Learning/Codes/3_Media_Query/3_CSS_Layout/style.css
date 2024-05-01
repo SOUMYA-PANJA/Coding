@@ -1,0 +1,14 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+
+    /* Default for normal flow */
+    /* float: none; */
+
+    /* Float left */
+    /* float: left; */
+
+    /* Float right */
+    float: right;
+}

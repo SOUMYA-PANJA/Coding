@@ -1,0 +1,42 @@
+body {
+    background-color: yellow;
+}
+
+div {
+    background-color: red;
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after {
+    content: "Hello World";
+}
+
+/* If viewport is atleast 900px. */
+/* @media (min-width: 900px) {
+    div {
+        background-color: blue;
+        color: yellow
+    }
+} */
+
+@media (max-width: 500px) {
+    div {
+        background-color: red;
+        color: yellow;
+    }
+}
+
+@media (500px < width < 900px) {
+    div {
+        background-color: blue;
+        color: yellow
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    div {
+        background-color: aqua;
+        color: saddlebrown;
+    }
+}

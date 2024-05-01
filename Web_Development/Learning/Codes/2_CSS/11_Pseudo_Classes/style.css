@@ -1,0 +1,44 @@
+.class1:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* When you select the color of text will be green and background color will be blueviolet */
+input:focus {
+    color: green;
+    background-color: blueviolet;
+}
+
+/* Apply if link is not visited. */
+.class2:link{
+    color: yellow;
+}
+
+/* After clicking the color of the link will become yellow */
+.class2:visited {
+    background-color: yellow;
+    color: black;
+}
+
+.class2:hover {
+    font-size: 25px;
+}
+
+/* When you click and until you release the click the color of the text will be brown */
+.class2:active {
+    color: brown;
+}
+
+/* Selects the first class3 element which is a child. */
+.class3:first-child {
+    background-color: yellow;
+}
+
+/* Selects the child based on the mathematical function you provide. We can pass numbers also. */
+/* .class4:nth-child(odd){
+    background-color: yellow;
+} */
+.class4:nth-child(2n+1){
+    background-color: yellow;
+}
+

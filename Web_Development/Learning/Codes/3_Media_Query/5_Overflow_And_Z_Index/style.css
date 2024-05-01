@@ -1,0 +1,36 @@
+.class1 {
+    height: 250px;
+    width: 250px;
+    border: 2px solid red;
+
+    /* Hide the overflow content */
+    /* overflow: hidden; */
+
+    /* Scroll the overflow context */
+    /* overflow: scroll; */
+
+    /* Same as scroll */
+    overflow: auto;
+}
+
+.class2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    /* The higher the z-index, the higher will be the element in the stack. */
+    z-index: -2;
+}
+
+.class3 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+}

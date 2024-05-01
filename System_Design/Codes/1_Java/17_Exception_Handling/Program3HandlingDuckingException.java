@@ -12,7 +12,7 @@ public class Program3HandlingDuckingException {
         System.out.println("Exiting fun2");
     }
     public static void main(String[] args) {
-        // main can also throws exceptioon by JVM will not handle the exception. and hence execution of the code will stop.
+        // main can also throws exceptioon but JVM will not handle the exception. And hence execution of the code will stop.
         try{
             fun2();
         }
